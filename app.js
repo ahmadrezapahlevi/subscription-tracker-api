@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: false}));
 app.use(cookieParser());
 
 app.use('/api/v1/auth', authRouter);
-app.use('/api/v1/user', userRouter);
+app.use('/api/v1/users', userRouter);
 app.use('/api/v1/subscriptions', subscriptionRouter);
 
 app.use(errorMiddleware);
