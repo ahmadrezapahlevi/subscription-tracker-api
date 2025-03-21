@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const subscriptionSchema = new mongoose.Schema({
-  nama: {
+  name: {
     type: String,
     required: [true, 'nama subscription diperlukan'],
     trim: true,
@@ -24,7 +24,7 @@ const subscriptionSchema = new mongoose.Schema({
   },
   category: {
     type: String,
-    enum: ['sports', 'news', 'entertaiment', 'lifestyle', 'technology', 'finance', 'politics', 'other'],
+    enum: ['sports', 'news', 'entertainment', 'lifestyle', 'technology', 'finance', 'politics', 'other'],
     required: true,
   },
   paymentMethod: {
@@ -41,7 +41,7 @@ const subscriptionSchema = new mongoose.Schema({
     type: Date,
     required: true,
     validate: {
-      validator: (value) => value < newDate(),
+      validator: (value) => value < new Date(),
       message: 'start date must be in the past',
     }
   },
