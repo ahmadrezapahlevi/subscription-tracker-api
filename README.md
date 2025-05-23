@@ -1,5 +1,3 @@
-Berikut adalah versi lengkap dan terstruktur dari README.md untuk repository ahmadrezapahlevi/subscription-tracker-api:
-
 # Subscription Tracker API
 
 Aplikasi backend untuk mengelola dan melacak langganan pengguna, dibangun dengan **Node.js**, **Express.js**, dan **MongoDB**. Proyek ini dirancang sebagai sarana pembelajaran bagi pemula yang ingin memahami pengembangan API dengan Node.js dan integrasi database NoSQL.
